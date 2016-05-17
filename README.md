@@ -5,7 +5,7 @@ Home: https://github.com/ionelmc/pytest-benchmark
 
 Package license: BSD 2-clause
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: A py.test fixture for benchmarking code
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pytest-benchmark-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/pytest-benchmark-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/pytest-benchmark-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pytest-benchmark-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pytest-benchmark-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pytest-benchmark-feedstock/branch/master)
