@@ -10,7 +10,7 @@ source:
   md5: f8ab8e438f039366e3765168ad831b4c
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -18,15 +18,19 @@ requirements:
     - python
     - setuptools
     - pytest >=2.6
+    - statistics  # [py<34]
 
   run:
     - python
     - setuptools
     - pytest >=2.6
+    - statistics  # [py<34]
 
 test:
   imports:
     - pytest_benchmark
+  commands:
+    - "py.test --traceconfig | grep pytest-benchmark-{{version}}"
 
 about:
   home: https://github.com/ionelmc/pytest-benchmark
