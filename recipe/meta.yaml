@@ -14,19 +14,13 @@ build:
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
-  build:
-    - python
-    - setuptools
-    - pytest >=2.6
-    - statistics  # [py<34]
-
   host:
     - python
     - pip
 
   run:
     - python
-    - setuptools
+    #- setuptools
     - pytest >=2.6
     - statistics  # [py<34]
 
