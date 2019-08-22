@@ -1,4 +1,4 @@
-{% set version = "3.0.0" %}
+{% set version = "3.2.2" %}
 
 package:
   name: pytest-benchmark
@@ -6,11 +6,11 @@ package:
 
 source:
   fn: pytest-benchmark-{{ version }}.zip
-  url: https://pypi.python.org/packages/source/p/pytest-benchmark/pytest-benchmark-{{ version }}.zip
-  md5: f8ab8e438f039366e3765168ad831b4c
+  url: https://pypi.python.org/packages/source/p/pytest-benchmark/pytest-benchmark-{{ version }}.tar.gz
+  md5: c8099b3b6c6bdd1aebc1e3a19809cee4
 
 build:
-  number: 1001
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
@@ -38,3 +38,4 @@ about:
 extra:
     recipe-maintainers:
         - juanlu001
+        - esloch
