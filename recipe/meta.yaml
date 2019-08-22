@@ -7,7 +7,7 @@ package:
 source:
   fn: pytest-benchmark-{{ version }}.zip
   url: https://pypi.python.org/packages/source/p/pytest-benchmark/pytest-benchmark-{{ version }}.tar.gz
-  md5: cec1d1d259b9869ac306f91936f9607508a119c34f21cca79d50521bc29bf980
+  md5: c8099b3b6c6bdd1aebc1e3a19809cee4
 
 build:
   number: 0
